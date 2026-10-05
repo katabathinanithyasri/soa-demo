@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 public class AppController {
 	
-	@GetMapping("/sub/{a}/{b}")
+	@GetMapping("/mul/{a}/{b}")
 	public String sub(@PathVariable("a") int a, @PathVariable("b") int b) {
 		
-		return "Substraction of two numbers are:"+ (a-b);
+		return "Substraction of two numbers are:"+ (a*b);
 	}
 
 	@GetMapping("/add/{a}/{b}")
