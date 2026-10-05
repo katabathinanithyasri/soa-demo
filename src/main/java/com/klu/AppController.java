@@ -13,7 +13,7 @@ public class AppController {
 	@GetMapping("/mul/{a}/{b}")
 	public String sub(@PathVariable("a") int a, @PathVariable("b") int b) {
 		
-		return "Substraction of two numbers are:"+ (a*b);
+		return "Multiplication of two numbers are:"+ (a*b);
 	}
 
 	@GetMapping("/add/{a}/{b}")
